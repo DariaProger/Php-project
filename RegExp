@@ -1,0 +1,18 @@
+
+if (preg_match('[1-4]', course)) { //очень неудобно с подгруппами
+    $course=$_POST["course"];
+} else {
+    echo "Курс введен неверно!";
+}
+
+if (preg_match('[1-6]', group)) { 
+    $group=$_POST["group"];
+} else {
+    echo "Группа введена неверно";
+}
+
+if (preg_match('[А-Яа-яё]', subj)) { 
+    $subj=$_POST["subj"];
+} else {
+    echo "Введите предмет правильно";
+}
